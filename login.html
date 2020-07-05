@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/login.css" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <header>
+        <div class="header-inner cf">
+          <div class="menu">
+            <a href="javascript:;">
+              <div class="before"></div>
+              <div class="menu-toggle"></div>
+              <div class="after"></div>
+            </a>
+          </div>
+          <div class="logo">
+            <h1><a href="index.html">魔赞</a></h1>
+          </div>
+          <div class="shopping-cart">
+            <a href="shoppingCart.html"></a>
+            <span>0</span>
+          </div>
+          <div class="login">
+            <a href="login.html">登录</a>
+            <span>|</span>
+            <a href="">注册</a>
+          </div>
+        </div>
+        <div class="classify">
+          <div class="classify-inner">
+            <h2>分类</h2>
+            <span></span>
+            <div class="kind">
+              <a href="">iPhone</a>
+              <a href="">iPad</a>
+              <a href="">Apple Watch</a>
+              <a href="">Mac</a>
+              <a href="">Beats</a>
+              <a href="">Apple 配件</a>
+            </div>
+          </div>
+        </div>
+      </header>
+      <section>
+        <div class="main-inner cf">
+          <div>
+            <a href="#"
+              ><img
+                src="./images/login/loginpic.png"
+                alt=""
+            /></a>
+          </div>
+          <form action="">
+            <div class="login-way">
+              <a href="javacript:;">账号密码登录</a>
+              <a href="javacript:;">手机验证码登录</a>
+            </div>
+            <div class="content">
+              <div>
+                <div class="phone">
+                  <span></span>
+                  <input
+                    type="tel"
+                    maxlength="11"
+                    placeholder="请输入手机号码"
+                  />
+                </div>
+                <div class="password">
+                  <span></span>
+                  <input
+                    type="password"
+                    placeholder="请输入密码"
+                  />
+                </div>
+                <div class="yanzheng">
+                  <input
+                    type="text"
+                    placeholder="请输入验证码"
+                  />
+                  <a href=""
+                    ><img
+                      src="./images/login/index.png"
+                      alt=""
+                      title="点击刷新"
+                  /></a>
+                </div>
+              </div>
+              <div>
+                <div class="yanzheng">
+                  <input
+                    type="text"
+                    placeholder="请输入验证码"
+                  />
+                  <a href=""
+                    ><img
+                      src="./images/login/index.png"
+                      alt=""
+                      title="点击刷新"
+                  /></a>
+                </div>
+                <div class="phone">
+                  <span></span>
+                  <input
+                    type="phone"
+                    placeholder="请输入手机号码"
+                  />
+                </div>
+                <input
+                  class="duanxinyz"
+                  type="text"
+                  placeholder="请输入短信验证码"
+                />
+              </div>
+            </div>
+            <a class="forget" href="#">忘记密码？</a>
+            <a class="login" href="#">登录</a>
+            <div class="form-down">
+              <a href="">微信登录</a>
+              <a href="">注册</a>
+            </div>
+          </form>
+        </div>
+        <div class="error-warn">
+          <p></p>
+        </div>
+      </section>
+      <footer>
+        <p>
+          Morethan.cc All rights
+          reserved.京ICP备15067340号.<br />地址：北京市朝阳区广顺北大街33号福码大厦B座601<br />客服电话：400-113-5353
+          (工作时间：周一至周五 9:00 - 18:00)
+        </p>
+      </footer>
+    </div>
+    <script src="./js/jquery-3.4.1.min.js"></script>
+    <script src="./js/tanchaung.js"></script>
+    <script>
+      //账号密码登录
+      $(".login-way>a").eq(0).addClass("style")
+      $(".content>div").eq(0).addClass("show")
+      $(".login-way>a").click(function () {
+        var ind = $(this).index()
+        $(this)
+          .addClass("style")
+          .siblings()
+          .removeClass("style")
+        $(".content>div")
+          .eq(ind)
+          .addClass("show")
+          .siblings()
+          .removeClass("show")
+      })
+      //手机号等的验证
+      $("form .login").click(function () {
+        var phoneText = $(".content .phone input").val()
+        var passwordText = $(
+          ".content .password input"
+        ).val()
+        var yanzhengText = $(
+          ".content .password input"
+        ).val()
+        if (
+          phoneText.length === 0 ||
+          passwordText.length === 0
+        ) {
+          $(".error-warn p").text("请填写 手机号和密码")
+        } else if (phoneText.length < 11) {
+          $(".error-warn p").text("请正确填写手机号")
+        } else if (phoneText.length === 11) {
+          //非数字字符\D
+          if (phoneText.test(/\D/)) {
+            $(".error-warn p").text("手机号格式错误")
+          }
+          // else if (yanzhengText.length === 0) {
+          //     $('.error-warn p').text('验证码不能为空')
+          // }
+        }
+        $(".error-warn").slideDown(50)
+        setTimeout(function () {
+          $(".error-warn").slideUp(50)
+        }, 1500)
+      })
+    </script>
+  </body>
+</html>

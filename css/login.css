@@ -1,0 +1,179 @@
+section {
+  width: 100%;
+  background-color: #000;
+  padding-top: 76px;
+  padding-bottom: 35px;
+}
+.main-inner {
+  width: 1200px;
+  margin: 0 auto;
+}
+.main-inner > div:first-child {
+  width: 560px;
+  margin-left: 50px;
+  margin-top: 28px;
+  float: left;
+}
+.main-inner > div:first-child img {
+  width: 100%;
+}
+form {
+  float: right;
+  width: 380px;
+  margin-top: 44px;
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 84px 20px 8px;
+}
+.login-way {
+  padding: 0 56px;
+  margin-bottom: 29px;
+}
+.login-way a:first-child {
+  margin-right: 53px;
+}
+.login-way a {
+  padding-bottom: 12px;
+  color: #c2c4c6;
+}
+.login-way .style {
+  border-bottom: 1px solid #1c1f26;
+  color: #1c1f26;
+}
+.content > div > div,
+.content > div > input {
+  border: 1px solid #c2c4c6;
+  border-radius: 4px;
+  margin-bottom: 24px;
+  /* height: 44px; */
+}
+.content > div {
+  display: none;
+}
+.content .show {
+  display: block;
+}
+.content .duanxinyz {
+  width: 364px;
+  padding-left: 16px;
+  outline: 0;
+  line-height: 44px;
+}
+.content > div > div span {
+  display: block;
+  width: 46px;
+  float: left;
+  height: 44px;
+  border-right: 1px solid #c2c4c6;
+  margin-right: 16px;
+}
+.content > div > div input {
+  line-height: 44px;
+  outline: 0;
+}
+.content .phone span {
+  background: url(../images/login/icon_10.png) no-repeat
+    center center;
+  background-size: 50%;
+}
+.content .password span {
+  background: url(../images/login/icon_11.png) no-repeat
+    center center;
+  background-size: 50%;
+}
+.content .yanzheng {
+  border: 0;
+}
+.content .yanzheng input {
+  width: 234px;
+  border: 1px solid #c2c4c6;
+  border-radius: 4px;
+  padding-left: 16px;
+  margin-right: 5px;
+}
+.content .yanzheng a {
+  display: block;
+  width: 114px;
+  float: right;
+  height: 44px;
+}
+.content .yanzheng a img {
+  width: 100%;
+}
+
+form > a.forget {
+  margin-left: 310px;
+  color: #1c1f26;
+  font-size: 14px;
+  transition: color 0.3s;
+}
+form > a.forget:hover {
+  color: #f5c26b;
+}
+form > a.login {
+  display: block;
+  line-height: 46px;
+  background-color: #f5c26b;
+  border-radius: 4px;
+  text-align: center;
+  color: #fff;
+  font-size: 18px;
+  margin-bottom: 54px;
+  margin-top: 24px;
+  transition: all 0.2s;
+}
+form > a.login:hover {
+  background-color: #f3bd62;
+  color: #fff6e6;
+}
+form .form-down a {
+  display: block;
+  padding: 5px 0;
+  float: left;
+  color: #1c1c26;
+  font-size: 14px;
+  transition: color 0.2s;
+}
+form .form-down a:first-child {
+  padding-left: 20px;
+  background: url(../images/login/QQ-weixin_02.png)
+    no-repeat left center;
+}
+form .form-down a:last-child {
+  float: right;
+}
+form .form-down a:hover {
+  color: #f5c26b;
+}
+section .error-warn {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 76px;
+  left: 0;
+  background-color: rgba(204, 202, 202, 0.2);
+  display: none;
+}
+section .error-warn p {
+  width: 200px;
+  line-height: 44px;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 5px;
+  position: absolute;
+  top: 200px;
+  left: 40%;
+  color: rgb(121, 117, 117);
+  font-size: 20px;
+}
+footer {
+  width: 100%;
+  background-color: #131313;
+  padding: 20px 0 60px;
+}
+footer p {
+  text-align: center;
+  font-size: 12px;
+  color: #707479;
+  line-height: 22px;
+}

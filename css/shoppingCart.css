@@ -1,0 +1,279 @@
+section {
+  width: 100%;
+  background-color: #f1f2f6;
+}
+.main-inner {
+  width: 1200px;
+  margin: 0 auto;
+  padding-top: 76px;
+}
+.main-top {
+  width: 1100px;
+  padding: 0 50px;
+  height: 90px;
+  line-height: 90px;
+  background-color: #eeeae2;
+}
+.main-top p {
+  width: 200px;
+  font-size: 24px;
+  color: #1c1f26;
+  margin-right: 0;
+  float: left;
+}
+.main-top p span {
+  font-size: 18px;
+  color: #ff6633;
+}
+.main-top > div {
+  margin-left: 15px;
+  font-size: 18px;
+  color: #1c1f26;
+  float: right;
+}
+.main-top .active {
+  height: 64px;
+  border-bottom: 2px solid #000;
+}
+.shop {
+  width: 1100px;
+  padding: 25px 50px 50px;
+  background-color: #fff;
+}
+.shop-title {
+  width: 1100px;
+  padding-bottom: 10px;
+  border-bottom: 3px solid #eeeae2;
+  font-size: 14px;
+  color: #c2c4c6;
+}
+.shop-title span {
+  display: inline-block;
+  width: 166px;
+  text-align: center;
+}
+span.choose {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+  vertical-align: middle;
+  background-color: #fff;
+  border-radius: 4px;
+  border: 2px solid #ece4d9;
+  cursor: pointer;
+}
+.shop span.change {
+  background: #f5c26b url(../images/shop/checkbox.png)
+    no-repeat center center;
+  background-size: 70%;
+  /* background-color: ; */
+  border: 2px solid #f5c26b;
+}
+.shop-title span:nth-child(2) {
+  margin-right: 290px;
+}
+.shop-title span:last-child {
+  width: 66px;
+}
+.shop-foot {
+  width: 1090px;
+  padding-left: 10px;
+  background-color: #ece4d9;
+  /* height: 45px; */
+  line-height: 45px;
+  font-size: 14px;
+  color: #b39472;
+  border-radius: 4px;
+  margin-top: 40px;
+}
+.shop-foot .choose {
+  background-color: #ece4d9;
+  border: 2px solid #b39472;
+}
+.goods-item {
+  position: relative;
+  margin-left: 10px;
+  padding: 20px 0;
+  border-bottom: 0.6px solid #ece4d9;
+}
+.goods-item:last-child {
+  border-bottom: 0;
+}
+.goods-item > span {
+  display: block;
+  float: left;
+  line-height: 87px;
+}
+.goods-item .choose {
+  margin-top: 36px;
+}
+.goods-item > div {
+  float: left;
+}
+.phone {
+  width: 360px;
+  margin-left: 35px;
+  margin-right: 150px;
+}
+.phone div {
+  width: 256px;
+  float: left;
+  font-size: 12px;
+  color: #1c1f16;
+}
+.phone span {
+  display: block;
+  margin-top: 8px;
+}
+.phone div span:first-child a {
+  display: inline-block;
+  color: #1c1f16;
+  cursor: pointer;
+  width: 156px;
+  transition: color 0.3s;
+}
+.phone div span:first-child a:hover {
+  color: #f3bd62;
+}
+
+.goods-item img {
+  width: 24%;
+  margin-right: 10px;
+  float: left;
+}
+.number {
+  width: 200px;
+  line-height: 87px;
+  text-align: center;
+  margin-left: 50px;
+  margin-right: 48px;
+  font-size: 14px;
+}
+.goods-item .price {
+  color: #c2c4c6;
+  font-size: 14px;
+}
+.goods-item .total-price {
+  font-size: 14px;
+  color: #ff6633;
+}
+button {
+  width: 26px;
+  height: 26px;
+  text-align: center;
+  border-radius: 4px;
+  background-color: #fff;
+  border: 1px solid #b39472;
+  color: #b39472;
+  outline: 0;
+  margin: 0 30px;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+button:hover {
+  color: #f5c26b;
+  border: 1px solid #f5c26b;
+}
+.del {
+  width: 40px;
+  height: 40px;
+  background: url(../images/shop/icon_21.png) no-repeat
+    center;
+  background-size: 30%;
+  margin-top: 22px;
+  margin-left: 60px;
+  cursor: pointer;
+}
+.pan-duan {
+  position: absolute;
+  right: 20px;
+  bottom: 10px;
+  display: none;
+}
+.pan-duan > span {
+  display: inline-block;
+  font-size: 14px;
+  color: #fff;
+  height: 32px;
+  line-height: 32px;
+  text-align: center;
+  cursor: pointer;
+}
+.pan-duan .yes {
+  width: 84px;
+  background-color: #dd2424;
+  border-radius: 4px 0 0 4px;
+}
+.pan-duan .no {
+  width: 126px;
+  background-color: #b39472;
+  border-radius: 0 4px 4px 0;
+}
+.delete {
+  padding-left: 20px;
+  margin-left: 20px;
+  background: url(../images/shop/icon_30.png) no-repeat left
+    center;
+  background-size: 30%;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.delete:hover {
+  background: url(../images/shop/icon_31.png) no-repeat left
+    center;
+  background-size: 30%;
+  color: #f3bd62;
+}
+.wish {
+  padding: 2px 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  background: url(../images/shop/icon_41.png) no-repeat left
+    center;
+  background-size: 16%;
+  border-right: 1px solid #b39472;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.wish:hover {
+  background: url(../images/shop/icon_42.png) no-repeat left
+    center;
+  background-size: 16%;
+  color: #f3bd62;
+}
+.shop-num,
+.already-choose,
+.discount {
+  display: inline-block;
+  width: 20px;
+  color: #ff6633;
+  text-align: center;
+}
+.shop-foot .sum {
+  display: inline-block;
+  width: 73px;
+  line-height: 20px;
+  text-align: right;
+  margin-left: 170px;
+  vertical-align: middle;
+}
+.summation {
+  font-size: 18px;
+  color: #ff6633;
+  font-weight: bold;
+  margin-left: 10px;
+}
+.shop-foot a {
+  display: block;
+  width: 165px;
+  background-color: #f5c26b;
+  font-size: 18px;
+  color: #fff;
+  text-align: center;
+  float: right;
+  border-radius: 0 4px 4px 0;
+}
+.shop-foot a:hover {
+  background-color: #f3bd62;
+}

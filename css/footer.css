@@ -1,0 +1,24 @@
+footer{
+    width: 100%;
+    background-color: #2b2f33;
+}
+.footer-inner{
+    width: 1200px;
+    margin: 0 auto;
+}
+.footer-inner .logo{
+    float: left;
+    width: 190px;
+    margin: 15px 15px 15px 25px;
+}
+.footer-inner .logo a{
+    display: block;
+    height: 61px; 
+    background: url(../images/detail/Morethan_logo.png) no-repeat;
+}
+.footer-inner p{
+    float:right;
+    margin-top: 30px;
+    color:#707479;
+    font-size: 12px;
+}
